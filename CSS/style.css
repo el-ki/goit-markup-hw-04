@@ -16,6 +16,7 @@
   --logo-color: #000000;
   --footer-color: rgba(255, 255, 255, 0.6);
   --team-background-color: #f5f4fa;
+  --social-link-color: #afb1b8;
 }
 
 body {
@@ -123,9 +124,28 @@ img {
 .address-mail:focus {
   color: var(--accent-color);
 }
+
 .address-tel:hover,
 .address-tel:focus {
   color: var(--accent-color);
+}
+
+.address-mail,
+.address-tel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.address-mail-svg,
+.address-mail-svg {
+  margin-right: 10px;
+  fill: var(--main-color);
+}
+
+.address-mail:hover .address-mail-svg,
+.address-tel:hover .address-mail-svg {
+  fill: var(--accent-color);
 }
 
 /* HERO */
@@ -262,10 +282,11 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-color);
+  margin-bottom: 16px;
 }
 
 .name-container {
-  padding: 30px 20px;
+  padding: 30px 32px;
   background: var(--color-dark-theme);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -275,6 +296,37 @@ img {
 .team-item-img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Experiment */
+
+.svg-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--color-dark-theme);
+}
+
+.social-list-link:hover .social-list-svg {
+  fill: var(--color-dark-theme);
+}
+
+.social-list-svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--social-link-color);
+}
+
+.social-list-link:hover {
+  background-color: var(--accent-color);
 }
 
 /* FOOTER */
