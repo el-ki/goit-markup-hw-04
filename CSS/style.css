@@ -17,6 +17,7 @@
   --footer-color: rgba(255, 255, 255, 0.6);
   --team-background-color: #f5f4fa;
   --social-link-color: #afb1b8;
+  --social-dark-theme: rgba(255, 255, 255, 0.1);
 }
 
 body {
@@ -437,6 +438,15 @@ img {
 }
 .contacts-list-item:not(:last-child) {
   margin-right: 70px;
+}
+.social-list-item {
+  display: flex;
+}
+.social-dark-theme-color {
+  background-color: var(--social-dark-theme);
+}
+.social-dark-theme {
+  fill: var(--color-dark-theme);
 }
 /* portfolio.html */
 /* HEADER */
