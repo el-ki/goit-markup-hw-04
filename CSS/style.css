@@ -151,6 +151,9 @@ img {
 
 /* HERO */
 .hero {
+  margin: 0 auto;
+  max-width: 1600px;
+  background-color: var(--background-color);
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
@@ -230,7 +233,7 @@ img {
   color: var(--main-color);
 }
 
-.advantages-item-antenna::before {
+.advantages-item::before {
   display: block;
   content: "";
   width: 270px;
@@ -238,49 +241,32 @@ img {
   background: #f5f4fa;
   border-radius: 4px;
   margin-bottom: 30px;
+}
+
+.icon-antenna::before {
   background-image: url(../images/advantages/antenna.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.advantages-item-clock::before {
-  display: block;
-  content: "";
-  width: 270px;
-  height: 120px;
-  background: #f5f4fa;
-  border-radius: 4px;
-  margin-bottom: 30px;
+.icon-clock::before {
   background-image: url(../images/advantages/clock.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.advantages-item-diagram::before {
-  display: block;
-  content: "";
-  width: 270px;
-  height: 120px;
-  background: #f5f4fa;
-  border-radius: 4px;
-  margin-bottom: 30px;
+.icon-diagram::before {
   background-image: url(../images/advantages/diagram.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.advantages-item-astronaut::before {
-  display: block;
-  content: "";
-  width: 270px;
-  height: 120px;
-  background: #f5f4fa;
-  border-radius: 4px;
-  margin-bottom: 30px;
+.icon-astronaut::before {
   background-image: url(../images/advantages/astronaut.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
+
 /* ABOUT US */
 
 .about {
@@ -359,6 +345,7 @@ img {
 .svg-list {
   display: flex;
   justify-content: space-between;
+  margin-top: 20px;
 }
 
 .social-list-link {
@@ -423,13 +410,14 @@ img {
 /* FOOTER */
 .footer {
   background: var(--background-color);
-  height: 252px;
 }
 
 .footer .logo {
   display: block;
+  padding-bottom: 0;
+  margin-right: 0;
   padding-top: 60px;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .logo-dark-theme {
@@ -451,9 +439,6 @@ img {
   letter-spacing: 0.03em;
   color: var(--color-dark-theme);
 }
-.footer-tel {
-  padding-bottom: 60px;
-}
 
 .footer-mail,
 .footer-tel {
@@ -474,27 +459,27 @@ img {
   color: var(--accent-color);
 }
 
-.contacts-list-container {
+.position {
+  display: flex;
+  align-items: baseline;
+  padding-bottom: 60px;
+}
+
+.contacts-container {
+  margin-right: 70px;
+}
+
+.social-container {
   width: 206px;
   height: 80px;
 }
-
-.contacts-list {
-  display: flex;
-}
-
-.contacts-list-title {
-  padding-top: 72px;
+.social-text {
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--color-dark-theme);
-  margin-bottom: 20px;
-}
-.contacts-list-item:not(:last-child) {
-  margin-right: 70px;
 }
 .social-list-item {
   display: flex;
